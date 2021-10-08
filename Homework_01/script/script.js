@@ -78,27 +78,27 @@ if(count > 0) {
 var arr = [16, true, 'MetraBit', NaN, {name: 'UserName', hobby: 'JS'}, 30, NaN, null, false, 'Vue'];
 
 function toCountTypes(arr) {
-    var numbers = 0;
-    var strings = 0;
-    var booleans = 0;
-    var nulls = 0;
-    var objects = 0;
+  var numbers = 0;
+  var strings = 0;
+  var booleans = 0;
+  var nulls = 0;
+  var objects = 0;
 
-    for(var i = 0; i < arr.length; i++) {
-        if(typeof(arr[i]) === 'number') {
-            numbers++;
-        } else if(typeof(arr[i]) === 'string') {
-            strings++;
-        } else if(typeof(arr[i]) === 'boolean') {
-            booleans++;
-        } else if(arr[i] === null) {
-            nulls++;
-        } else if(typeof(arr[i]) === 'object'){
-            objects++
-        }
+  for(var i = 0; i < arr.length; i++) {
+    if(typeof(arr[i]) === 'number') {
+      numbers++;
+    } else if(typeof(arr[i]) === 'string') {
+      strings++;
+    } else if(typeof(arr[i]) === 'boolean') {
+      booleans++;
+    } else if(arr[i] === null) {
+      nulls++;
+    } else if(typeof(arr[i]) === 'object'){
+      objects++
     }
+  }
     
-    return `Number: ${numbers}, string: ${strings}, boolean: ${booleans}, null: ${nulls}, object: ${objects}.`
+  return `Number: ${numbers}, string: ${strings}, boolean: ${booleans}, null: ${nulls}, object: ${objects}.`
 }
 
 toCountTypes(arr);
@@ -109,7 +109,7 @@ var name = 'Tanya';
 var greeting = 'Hello';
 
 function toGreetUser(name, greeting) {
-    return `${greeting}, ${name}!`;
+  return `${greeting}, ${name}!`;
 }
 
 toGreetUser(name, greeting)
@@ -117,7 +117,7 @@ toGreetUser(name, greeting)
 // Задача 4.1
 
 var toGreetUser = function(name, greeting) {
-    return `${greeting}, ${name}!`;
+  return `${greeting}, ${name}!`;
 }
 
 toGreetUser('Tanya', 'Hello')
