@@ -86,7 +86,7 @@ for(let i = 0; i < contactsInput.length; i++) {
     }
 
     if(address === undefined || address === '' || address === ' ') {
-      address = 'Введите фамилию!'
+      address = 'Введите адрес!'
     }
 
     let infoName = document.getElementById('info-name')
