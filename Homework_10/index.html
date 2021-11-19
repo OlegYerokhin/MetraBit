@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework by Oleg Yerokhin</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="tab-section">
+        <div class="content">
+            <div class="tab-list" id="tab-list">
+                <button class="tab-btn active-tab">Product</button>
+                <button class="tab-btn">Contacts</button>
+                <button class="tab-btn">Info</button>
+            
+                <div class="tabs-content">
+                    <div id="product" class="inner-content active">
+                        <div class="container">
+                            <h2>AirPods Pro</h2>
+                            <img src="./img/airpods-pro.png" alt="airpods_pro">
+                            <div class="product-inside">
+                                <div class="product-price">
+                                    <div class="price">
+                                        <div class="price-word">
+                                            <p>Price:</p> 
+                                        </div>
+                                        <div id="price" class="price-value">150</div>
+                                        <div class="price-value">
+                                            <p>$</p> 
+                                        </div>
+                                    </div>
+                                    <div class="quantity-inner">
+                                        <button class="decrement-button quantity-btn" type="button" id="decrement">-</button>
+                                        <input type="text" name="product-quantity" id="quantity" value="1">
+                                        <button class="increment-button quantity-btn" type="button" id="increment">+</button>
+                                    </div>
+                                </div>
+                                <div class="product-sum">
+                                    <div class="price-word">
+                                        <p>Products sum: </p>
+                                    </div>
+                                    <div id="final-price" class="price-value">150</div>
+                                    <p class="price-value">$</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact" class="inner-content">
+                        <div class="container">
+                            <h2>Shipping form</h2>
+                            <form class="about-client" action="#">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-input" id="name" placeholder="UserName">
+            
+                                <label for="surname">Surname</label>
+                                <input type="text" class="form-input" id="surname" placeholder="UserSurname">
+            
+                                <label for="email">Email</label>
+                                <input type="email" class="form-input" id="email" placeholder="user.mail.com">
+            
+                                <label for="phone">Phone</label>
+                                <input type="tel" class="form-input" id="phone" placeholder="8080102934">
+            
+                                <label for="address">Address</label>
+                                <input type="text" class="form-input" id="address" placeholder="Kharkiv">
+                            </form>
+                        </div>
+                    </div>            
+                    <div id="info" class="inner-content">
+                        <div class="info-container container">
+                            <div class="product-info">
+                                <h2>Product Info</h2>
+                                <img src="./img/airpods-pro.png" alt="airpods_pro">
+                                <div>
+                                    <p>Name: </p>
+                                    <p id="product-name">AirPods Pro</p>
+                                </div>
+                                <div>
+                                    <p>Quantity: </p>
+                                    <p id="product-quantity">1</p>
+                                </div>
+                                <div>
+                                    <p>Purchase amount: </p>
+                                    <p id="amount">150</p>
+                                    <p>$</p>
+                                </div>
+                            </div>
+                            <div class="contact-info">
+                                <h2>Contact Info</h2>
+                                <div>
+                                    <p>Name: </p>
+                                    <p id="info-name"></p>
+                                </div>
+                                <div>
+                                    <p>Surname: </p>
+                                    <p id="info-surname"></p>
+                                </div>
+                                <div>
+                                    <p>Email: </p>
+                                    <p id="info-email"></p>
+                                </div>
+                                <div>
+                                    <p>Phone: </p>
+                                    <p id="info-phone"></p>
+                                </div>
+                                <div>
+                                    <p>Address: </p>
+                                    <p id="info-address"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>           
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
