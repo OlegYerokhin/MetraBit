@@ -1,0 +1,65 @@
+div {
+    display: block;
+    margin: 20px 25%;
+    background-color: firebrick;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 1px 4px 2px #000;
+    font-size: 35px;
+}
+
+::marker {
+    color: white;
+    text-shadow: 1px 2px 1px #000;
+    font-size: 24px;
+}
+
+ol {
+    padding-bottom: 10px;
+}
+
+input {
+    width: 75%;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+}
+
+li button {
+    margin-left: 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #000;
+}
+
+.add-item-btn {
+    padding: 10px 25px;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+.add-item {
+    margin: 20px;
+}
+
+.add-item textarea {
+    display: inline;
+    height: 40px;
+    width: 89%;
+    resize: none;
+}
+
+.add-item button {
+    vertical-align: top;
+    margin-left: 13px;
+    padding: 13px 6px;
+    box-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+}
